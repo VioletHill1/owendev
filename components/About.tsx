@@ -6,6 +6,7 @@ import { bebas } from "@/assets/fonts";
 import AnimatedTextCharacter from "./AnimatedTextCharacter";
 import Image from "next/image";
 import me1 from "@/assets/me2.webp";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -13,7 +14,13 @@ const About = () => {
       <header className="text-7xl lg:text-8xl font-bold text-center">
         <AnimatedTextCharacter text="About." className={`${bebas.className}`} />
       </header>
-      <div className="flex flex-col-reverse px-7 lg:grid lg:grid-cols-2 items-center lg:pl-32">
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, ease: "easeInOut" }}
+        className="flex flex-col-reverse px-7 lg:grid lg:grid-cols-2 items-center lg:pl-32"
+      >
         <article className="flex flex-col gap-5">
           <header>
             <h3 className={`${bebas.className} text-4xl`}>
@@ -45,7 +52,7 @@ const About = () => {
             />
           </figure>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

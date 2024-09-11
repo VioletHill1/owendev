@@ -15,18 +15,9 @@ const AnimatedTextCharacter: React.FC<AnimatedTextCharacterProps> = ({
 
   // Variants for Container
   const container = {
-    hidden: { opacity: 0 },
-    visible: (i = 1) => ({
-      opacity: 1,
-      transition: { staggerChildren: 0.06, delayChildren: 0.08 * i },
-    }),
-  };
-
-  // Variants for each letter
-  const child = {
+    hidden: { opacity: 0, y: 50 },
     visible: {
       opacity: 1,
-      x: 0,
       y: 0,
       transition: {
         type: "spring",
@@ -34,17 +25,9 @@ const AnimatedTextCharacter: React.FC<AnimatedTextCharacterProps> = ({
         stiffness: 100,
       },
     },
-    hidden: {
-      opacity: 0,
-      x: 0,
-      y: 50,
-      transition: {
-        type: "spring",
-        damping: 12,
-        stiffness: 100,
-      },
-    },
   };
+
+  // Variants for each letter
 
   return (
     <motion.div
@@ -59,7 +42,7 @@ const AnimatedTextCharacter: React.FC<AnimatedTextCharacterProps> = ({
       className={className}
     >
       {letters.map((letter, index) => (
-        <motion.span variants={child} key={index}>
+        <motion.span key={index}>
           {letter === " " ? "\u00A0" : letter}
         </motion.span>
       ))}

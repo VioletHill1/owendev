@@ -1,7 +1,6 @@
 "use client";
 
 import { Bebas_Neue } from "next/font/google";
-import AnimatedTextCharacter from "./AnimatedTextCharacter";
 import { FC, RefObject } from "react";
 import Ripple from "./Ripple";
 import Image from "next/image";
@@ -24,8 +23,9 @@ const HeroSection: FC<HeroProps> = ({ scrollToRef }) => {
   const handleScrollClick = () => {
     scrollToRef.current?.scrollIntoView({ behavior: "smooth" });
   };
+
   return (
-    <section className="relative flex flex-col items-center justify-center h-dvh">
+    <section className="relative flex flex-col items-center justify-center h-dvh transition-height duration-75">
       <div className="absolute bottom-14">
         <motion.button
           onClick={handleScrollClick}
@@ -40,46 +40,80 @@ const HeroSection: FC<HeroProps> = ({ scrollToRef }) => {
           <Image src={down} alt="Down Arrow" width={30} height={30} />
         </motion.button>
       </div>
-      <div className="absolute flex flex-col gap-6 items-center text-center">
+      <motion.div className="absolute flex flex-col gap-6 items-center text-center">
         <h1 className="flex flex-col items-center leading-none ">
-          <AnimatedTextCharacter
-            className={`text-[62px] text-wrap lg:text-9xl ${bebas.className}`}
-            text="Owen Rodriguez"
-          />
-          <span className="flex items-center">
-            <AnimatedTextCharacter
-              className={`text-[62px] text-wrap lg:text-9xl text-rose-600 ${bebas.className}`}
-              text="Developer "
-            />
-            <AnimatedTextCharacter
-              className={`text-[62px] text-wrap lg:text-9xl ${bebas.className}`}
-              text="& "
-            />
-            <span className="text-medium leading-4 text-zinc-400 lg:text-base mr-4 lg:mr-0 font-semibold">
-              Based in <br /> NJ, USA
-            </span>
-          </span>
-          <span className="flex items-center lg:w-full justify-between">
-            <Button
-              radius="full"
-              variant="ghost"
-              className="font-semibold text-slate-200 hover:text-black gap-4 mr-5 lg:gap-5 p-5 lg:px-7 lg:ml-24"
+          <div className="overflow-hidden h-9xl">
+            <motion.div
+              initial={{ y: "100%" }}
+              animate={{ y: "0%" }}
+              transition={{ duration: 0.7, ease: "easeInOut" }}
+              viewport={{ once: true }}
+              className={`text-[62px] text-wrap overflow-hidden lg:text-9xl ${bebas.className}`}
             >
-              <Ripple />
-              <span>Contact</span>
-            </Button>
-            {/* <button className="flex justify-center items-center border gap-5 lg:ml-20 p-3 lg:px-7 lg:py-4 rounded-full"></button> */}
-            <AnimatedTextCharacter
-              className={`text-[62px] text-wrap lg:text-9xl text-yellow-400 ${bebas.className}`}
-              text="Designer"
-            />
-          </span>
+              Owen Rodriguez
+            </motion.div>
+          </div>
+
+          <div className="overflow-hidden h-9xl">
+            <motion.div
+              initial={{ y: "100%" }}
+              animate={{ y: "0%" }}
+              transition={{ duration: 0.7, ease: "easeInOut" }}
+              viewport={{ once: true }}
+              className="flex items-center gap-5"
+            >
+              <span
+                className={`text-[62px] text-wrap lg:text-9xl text-rose-600 ${bebas.className}`}
+              >
+                Developer
+              </span>
+              <span
+                className={`text-[62px] text-wrap lg:text-9xl ${bebas.className}`}
+              >
+                &
+              </span>
+              <span className="text-medium leading-4 text-zinc-400 lg:text-base mr-4 lg:mr-0 font-semibold">
+                Based in <br /> NJ, USA
+              </span>
+            </motion.div>
+          </div>
+          <div className="overflow-hidden h-9xl">
+            <motion.div
+              initial={{ y: "100%" }}
+              animate={{ y: "0%" }}
+              transition={{ duration: 0.7, ease: "easeInOut" }}
+              viewport={{ once: true }}
+              className="flex items-center lg:w-full justify-between"
+            >
+              <Button
+                radius="full"
+                variant="ghost"
+                className="font-semibold text-slate-200 hover:text-black gap-4 mr-5 lg:gap-5 p-5 lg:px-7 lg:ml-24"
+              >
+                <Ripple />
+                <span>Contact</span>
+              </Button>
+              <span
+                className={`text-[62px] text-wrap lg:text-9xl text-yellow-400 ${bebas.className}`}
+              >
+                Designer
+              </span>
+            </motion.div>
+          </div>
         </h1>
 
-        <div className="text-xl font-semibold lg:text-lg w-3/4 lg:w-1/2">
-          Building modern and scalable web solutions for your business.
+        <div className="overflow-hidden h-lg text-center w-3/4 lg:w-1/2">
+          <motion.div
+            initial={{ y: "100%" }}
+            animate={{ y: "0%" }}
+            transition={{ duration: 0.7, ease: "easeInOut" }}
+            viewport={{ once: true }}
+            className="text-xl font-semibold lg:text-lg "
+          >
+            Building modern and scalable web solutions for your business.
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
