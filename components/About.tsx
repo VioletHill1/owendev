@@ -16,18 +16,18 @@ const About = () => {
       <div className="flex flex-col-reverse px-7 lg:grid lg:grid-cols-2 items-center lg:pl-32">
         <article className="flex flex-col gap-5">
           <header>
-            <h3 className={`${bebas.className} text-5xl`}>
+            <h3 className={`${bebas.className} text-4xl`}>
               Hello! I&apos;m Owen. Web Developer & Design with over a year of
               experience.
             </h3>
           </header>
-          <p className="text-xl">
+          <p className="text-lg">
             During this year I&apos;ve working and improving myself in the area
             of front-end and a little of back-end. As an independent, I am
             completly free to work with agencies, startups, or anyone who wants
             to create their own mark for any kind of business.
           </p>
-          <p className="text-xl">
+          <p className="text-lg">
             I&apos;m currently a Senior in Linden High School with a goal of
             reach a bachelor degree in Computer Science, and a Master in Data
             Science. I also love to listen to Muse and Imagine Dragons, and

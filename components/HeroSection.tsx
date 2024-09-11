@@ -25,7 +25,7 @@ const HeroSection: FC<HeroProps> = ({ scrollToRef }) => {
     scrollToRef.current?.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <section className="relative flex flex-col items-center justify-center h-screen">
+    <section className="relative flex flex-col items-center justify-center h-dvh">
       <div className="absolute bottom-14">
         <motion.button
           onClick={handleScrollClick}
@@ -43,19 +43,19 @@ const HeroSection: FC<HeroProps> = ({ scrollToRef }) => {
       <div className="absolute flex flex-col gap-6 items-center text-center">
         <h1 className="flex flex-col items-center leading-none ">
           <AnimatedTextCharacter
-            className={`text-[60px] text-wrap lg:text-9xl ${bebas.className}`}
+            className={`text-[62px] text-wrap lg:text-9xl ${bebas.className}`}
             text="Owen Rodriguez"
           />
           <span className="flex items-center">
             <AnimatedTextCharacter
-              className={`text-[60px] text-wrap lg:text-9xl text-rose-600 ${bebas.className}`}
+              className={`text-[62px] text-wrap lg:text-9xl text-rose-600 ${bebas.className}`}
               text="Developer "
             />
             <AnimatedTextCharacter
-              className={`text-[60px] text-wrap lg:text-9xl ${bebas.className}`}
+              className={`text-[62px] text-wrap lg:text-9xl ${bebas.className}`}
               text="& "
             />
-            <span className="text-medium leading-4 text-zinc-400 lg:text-base mr-5 lg:mr-0 font-semibold">
+            <span className="text-medium leading-4 text-zinc-400 lg:text-base mr-4 lg:mr-0 font-semibold">
               Based in <br /> NJ, USA
             </span>
           </span>
@@ -70,7 +70,7 @@ const HeroSection: FC<HeroProps> = ({ scrollToRef }) => {
             </Button>
             {/* <button className="flex justify-center items-center border gap-5 lg:ml-20 p-3 lg:px-7 lg:py-4 rounded-full"></button> */}
             <AnimatedTextCharacter
-              className={`text-[60px] text-wrap lg:text-9xl text-yellow-400 ${bebas.className}`}
+              className={`text-[62px] text-wrap lg:text-9xl text-yellow-400 ${bebas.className}`}
               text="Designer"
             />
           </span>

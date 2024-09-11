@@ -54,7 +54,7 @@ const AnimatedTextCharacter: React.FC<AnimatedTextCharacterProps> = ({
       whileInView="visible"
       viewport={{
         once: true,
-        margin: "-200px",
+        margin: "-100px",
       }}
       className={className}
     >
