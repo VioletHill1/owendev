@@ -5,6 +5,8 @@ import { FC, RefObject } from "react";
 import Ripple from "./Ripple";
 import Image from "next/image";
 import down from "@/assets/downArrow.svg";
+import star from "@/assets/starone.svg";
+import startwo from "@/assets/startwo.svg";
 import { motion } from "framer-motion";
 import { Button } from "@nextui-org/button";
 
@@ -26,6 +28,45 @@ const HeroSection: FC<HeroProps> = ({ scrollToRef }) => {
 
   return (
     <section className="relative flex flex-col items-center justify-center h-dvh transition-height duration-75">
+      <motion.div
+        animate={{ scale: [1, 1.2, 1] }}
+        transition={{
+          repeat: Infinity,
+          duration: 2,
+          ease: "linear",
+          repeatDelay: 0.5,
+        }}
+        className="absolute invert left-72 top-32"
+      >
+        <Image src={star} width={50} height={50} alt="Star One Icon" />
+      </motion.div>
+      <motion.div
+        animate={{ scale: [1, 1.3, 1] }}
+        transition={{
+          repeat: Infinity,
+          duration: 2,
+          ease: "linear",
+          repeatDelay: 0.5,
+        }}
+        className="absolute invert right-40 top-64"
+      >
+        <Image src={star} width={40} height={40} alt="Star One Icon" />
+      </motion.div>
+      <motion.div
+        animate={{ scale: [0.5, 1, 0.5] }}
+        transition={{
+          repeat: Infinity,
+          duration: 2,
+          ease: "linear",
+          repeatDelay: 0.5,
+        }}
+        className="absolute invert left-52 bottom-36"
+      >
+        <Image src={startwo} width={20} height={20} alt="Star One Icon" />
+      </motion.div>
+      <motion.div className="absolute invert right-96 bottom-52">
+        <Image src={startwo} width={30} height={30} alt="Star One Icon" />
+      </motion.div>
       <div className="absolute bottom-14">
         <motion.button
           onClick={handleScrollClick}
