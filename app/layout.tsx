@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import { NextUIProvider } from "@nextui-org/react";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,7 +30,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Analytics />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -37,6 +37,8 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <Analytics />
+          <SpeedInsights />
         </NextUIProvider>
       </body>
     </html>

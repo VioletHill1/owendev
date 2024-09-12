@@ -27,7 +27,10 @@ const HeroSection: FC<HeroProps> = ({ scrollToRef }) => {
   };
 
   return (
-    <section className="relative flex flex-col items-center justify-center h-dvh transition-height duration-75">
+    <section
+      id="heroSection"
+      className="relative flex flex-col items-center justify-center h-dvh transition-height duration-75"
+    >
       <motion.div
         animate={{ scale: [1, 1.2, 1] }}
         transition={{

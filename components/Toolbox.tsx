@@ -6,7 +6,10 @@ import Carousel from "./carousel/Carousel";
 
 const Toolbox = () => {
   return (
-    <section className="flex flex-col justify-center items-center h-1/2 px-7 mb-20 lg:mb-0 lg:px-32">
+    <section
+      id="toolboxSection"
+      className="flex flex-col justify-center items-center h-1/2 px-7 mb-20 lg:mb-0 lg:px-32"
+    >
       <header className="text-7xl lg:text-8xl font-bold text-center">
         <AnimatedTextCharacter
           text="Toolbox."

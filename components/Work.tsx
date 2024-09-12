@@ -13,6 +13,7 @@ interface WorkProps {
 const Work: FC<WorkProps> = ({ sectionRef }) => {
   return (
     <section
+      id="workSection"
       ref={sectionRef}
       className="flex flex-col justify-center items-center my-40 lg:h-screen gap-14 px-7 lg:px-20"
     >
