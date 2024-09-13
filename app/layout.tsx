@@ -46,7 +46,7 @@ export const metadata: Metadata = {
       "I'm happy to present you my personal portfolio created by me. I'm a software developer and designer open to work on anything you need, from landing pages to a full ecommerce website with an admin panel.",
     url: "https://owendev-one.vercel.app",
     images: {
-      url: "https://owendev-one.vercel.app/webbanner.png",
+      url: "https://owendev-one.vercel.app/images/webbanner.png",
       alt: "Banner for the website",
     },
     type: "website",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Owen R - Developer",
     images: {
-      url: "https://owendev-one.vercel.app/webbanner.png",
+      url: "https://owendev-one.vercel.app/images/webbanner.png",
       alt: "Banner for the website",
     },
     description:
@@ -75,6 +75,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Owen Developer & Design",
+  image: "https://owendev-one.vercel.app/images/webbanner.png",
   description:
     "Freelance Web Developer & Designer based in New Jersey, United States. Open to help startups to bigger companies that wants to grow.",
   url: "https://owendev-one.vercel.app",
