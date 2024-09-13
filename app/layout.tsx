@@ -62,6 +62,15 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Owen Web Developer & Design",
+  description:
+    "Freelance Web Developer & Designer based in New Jersey, United States. Open to help startups to bigger companies that wants to grow.",
+  url: "https://owendev-one.vercel.app",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -79,6 +88,10 @@ export default function RootLayout({
           <Analytics />
           <SpeedInsights />
         </NextUIProvider>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   );
