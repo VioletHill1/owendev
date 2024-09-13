@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   creator: "Owen Rodriguez",
   category: "Web Developer",
   verification: {
-    google: "PIjuy6KbE71Hn-PJD6v3CdpAVbdzL8V88fs4gn7fURw",
+    google: "4ylWUxzrlqKMXnRcm4T8GV4zjj4ufM9vU_qE_ZqFXmU",
   },
   metadataBase: new URL("https://owendev-one.vercel.app"),
   alternates: {
