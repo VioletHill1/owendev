@@ -45,6 +45,10 @@ export const metadata: Metadata = {
     description:
       "I'm happy to present you my personal portfolio created by me. I'm a software developer and designer open to work on anything you need, from landing pages to a full ecommerce website with an admin panel.",
     url: "https://owendev-one.vercel.app",
+    images: {
+      url: "https://owendev-one.vercel.app/webbanner.png",
+      alt: "Banner for the website",
+    },
     type: "website",
   },
   twitter: {
