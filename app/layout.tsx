@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     canonical: "https://owendev-one.vercel.app",
   },
   openGraph: {
-    title: "Owen R - Developer",
+    title: "Owen R - Web Developer & Designer",
     description:
       "I'm happy to present you my personal portfolio created by me. I'm a software developer and designer open to work on anything you need, from landing pages to a full ecommerce website with an admin panel.",
     url: "https://owendev-one.vercel.app",

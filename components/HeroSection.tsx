@@ -39,7 +39,7 @@ const HeroSection: FC<HeroProps> = ({ scrollToRef }) => {
           ease: "linear",
           repeatDelay: 0.5,
         }}
-        className="absolute invert left-16 top-24 lg:left-72 lg:top-32"
+        className="absolute invert w-[27px] lg:w-[50px] left-16 top-36 lg:left-72 lg:top-32"
       >
         <Image src={star} width={50} height={50} alt="Star One Icon" />
       </motion.div>
@@ -49,9 +49,9 @@ const HeroSection: FC<HeroProps> = ({ scrollToRef }) => {
           repeat: Infinity,
           duration: 2,
           ease: "linear",
-          repeatDelay: 0.5,
+          repeatDelay: 0.7,
         }}
-        className="absolute invert right-16 top-[640px] lg:right-40 lg:top-72"
+        className="absolute w-[30px] lg:w-[50px] invert right-16 top-[640px] lg:right-40 lg:top-72"
       >
         <Image src={star} width={50} height={50} alt="Star One Icon" />
       </motion.div>
