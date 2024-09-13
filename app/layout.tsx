@@ -19,10 +19,11 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Owen R - Developer",
+  title: "Owen R - Web Developer & Designer",
   description:
     "I'm happy to present you my personal portfolio created by me. I'm a software developer and designer open to work on anything you need, from landing pages to a full ecommerce website with an admin panel.",
   keywords: [
+    "Owen Web Developer",
     "Web Developer",
     "Web Designer",
     "Software Developer",
@@ -65,7 +66,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Owen Web Developer & Design",
+  name: "Owen Developer & Design",
   description:
     "Freelance Web Developer & Designer based in New Jersey, United States. Open to help startups to bigger companies that wants to grow.",
   url: "https://owendev-one.vercel.app",

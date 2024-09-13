@@ -92,7 +92,7 @@ const HeroSection: FC<HeroProps> = ({ scrollToRef }) => {
               animate={{ y: "0%" }}
               transition={{ duration: 0.7, ease: "easeInOut" }}
               viewport={{ once: true }}
-              className={`text-[62px] text-wrap overflow-hidden lg:text-9xl ${bebas.className}`}
+              className={`text-[52px] text-wrap overflow-hidden lg:text-9xl ${bebas.className}`}
             >
               Owen Rodriguez
             </motion.div>
@@ -107,16 +107,16 @@ const HeroSection: FC<HeroProps> = ({ scrollToRef }) => {
               className="flex items-center gap-5"
             >
               <span
-                className={`text-[62px] text-wrap lg:text-9xl text-rose-600 ${bebas.className}`}
+                className={`text-[52px] text-wrap lg:text-9xl text-rose-600 ${bebas.className}`}
               >
                 Developer
               </span>
               <span
-                className={`text-[62px] text-wrap lg:text-9xl ${bebas.className}`}
+                className={`text-[52px] text-wrap lg:text-9xl ${bebas.className}`}
               >
                 &
               </span>
-              <span className="text-medium leading-4 text-zinc-400 lg:text-base mr-4 lg:mr-0 font-semibold">
+              <span className="text-[14px] leading-4 text-zinc-400 lg:text-base mr-4 lg:mr-0 font-semibold">
                 Based in <br /> NJ, USA
               </span>
             </motion.div>
@@ -132,13 +132,13 @@ const HeroSection: FC<HeroProps> = ({ scrollToRef }) => {
               <Button
                 radius="full"
                 variant="ghost"
-                className="font-semibold text-slate-200 hover:text-black gap-4 mr-5 lg:gap-5 p-5 lg:px-7 lg:ml-24"
+                className="font-semibold text-[12px] text-slate-200 hover:text-black gap-4 mr-5 lg:gap-5 lg:px-7 lg:ml-24"
               >
                 <Ripple />
                 <span>Contact</span>
               </Button>
               <span
-                className={`text-[62px] text-wrap lg:text-9xl text-yellow-400 ${bebas.className}`}
+                className={`text-[52px] text-wrap lg:text-9xl text-yellow-400 ${bebas.className}`}
               >
                 Designer
               </span>
@@ -152,7 +152,7 @@ const HeroSection: FC<HeroProps> = ({ scrollToRef }) => {
             animate={{ y: "0%" }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
             viewport={{ once: true }}
-            className="text-xl font-semibold lg:text-lg "
+            className="text-lg font-semibold lg:text-lg "
           >
             Building modern and scalable web solutions for your business.
           </motion.div>
