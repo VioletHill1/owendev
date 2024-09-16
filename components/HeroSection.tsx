@@ -116,7 +116,7 @@ const HeroSection: FC<HeroProps> = ({ scrollToRef }) => {
               >
                 &
               </span>
-              <span className="text-[14px] leading-4 text-zinc-400 lg:text-base mr-4 lg:mr-0 font-semibold">
+              <span className="text-sm leading-4 text-zinc-400 lg:text-base mr-4 lg:mr-0 font-semibold">
                 Based in <br /> NJ, USA
               </span>
             </motion.div>

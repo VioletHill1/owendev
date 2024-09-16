@@ -19,7 +19,7 @@ const About = () => {
       </header>
       <div className="flex flex-col-reverse px-7 lg:grid lg:grid-cols-2 items-center lg:pl-32">
         <motion.article
-          initial={{ x: -100, opacity: 0 }}
+          initial={{ x: -20, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7, ease: "easeInOut" }}
@@ -45,7 +45,7 @@ const About = () => {
           </p>
         </motion.article>
         <motion.div
-          initial={{ x: 100, opacity: 0 }}
+          initial={{ x: 20, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7, ease: "easeInOut" }}

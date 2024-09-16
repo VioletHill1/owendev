@@ -1,6 +1,7 @@
 "use client";
 
 import About from "@/components/About";
+import ContactSection from "@/components/Contact";
 import HeroSection from "@/components/HeroSection";
 import Toolbox from "@/components/Toolbox";
 import Work from "@/components/Work";
@@ -13,8 +14,9 @@ export default function Home() {
     <main className="relative min-h-screen w-full">
       <HeroSection scrollToRef={workSectionRef} />
       <Work sectionRef={workSectionRef} />
-      <Toolbox />
       <About />
+      <Toolbox />
+      <ContactSection />
     </main>
   );
 }
