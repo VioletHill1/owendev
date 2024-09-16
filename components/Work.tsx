@@ -15,12 +15,12 @@ const Work: FC<WorkProps> = ({ sectionRef }) => {
     <section
       id="workSection"
       ref={sectionRef}
-      className="flex flex-col justify-center items-center my-40 lg:h-screen gap-14 px-7 lg:px-20"
+      className="flex flex-col justify-center items-center my-40 lg: gap-14 px-7 lg:px-20"
     >
       <header className="text-7xl lg:text-8xl font-bold text-center">
         <AnimatedTextCharacter text="Work." className={`${bebas.className}`} />
       </header>
-      <div className="flex justify-center w-full">
+      <div className="flex justify-center">
         <ItemWork />
       </div>
     </section>

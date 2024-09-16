@@ -26,6 +26,13 @@ const HeroSection: FC<HeroProps> = ({ scrollToRef }) => {
     scrollToRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section
       id="heroSection"
@@ -86,20 +93,20 @@ const HeroSection: FC<HeroProps> = ({ scrollToRef }) => {
       </div>
       <motion.div className="absolute flex flex-col gap-6 items-center text-center">
         <h1 className="flex flex-col items-center leading-none ">
-          <div className="overflow-hidden h-9xl">
-            <motion.div
+          <span className="overflow-hidden h-9xl">
+            <motion.span
               initial={{ y: "100%" }}
               animate={{ y: "0%" }}
               transition={{ duration: 0.7, ease: "easeInOut" }}
               viewport={{ once: true }}
-              className={`text-[52px] text-wrap overflow-hidden lg:text-9xl ${bebas.className}`}
+              className={`text-[52px] sm:text-7xl md:text-8xl text-wrap overflow-hidden lg:text-9xl ${bebas.className}`}
             >
               Owen Rodriguez
-            </motion.div>
-          </div>
+            </motion.span>
+          </span>
 
-          <div className="overflow-hidden h-9xl">
-            <motion.div
+          <span className="overflow-hidden h-9xl">
+            <motion.span
               initial={{ y: "100%" }}
               animate={{ y: "0%" }}
               transition={{ duration: 0.7, ease: "easeInOut" }}
@@ -107,20 +114,20 @@ const HeroSection: FC<HeroProps> = ({ scrollToRef }) => {
               className="flex items-center gap-5"
             >
               <span
-                className={`text-[52px] text-wrap lg:text-9xl text-rose-600 ${bebas.className}`}
+                className={`text-[52px] sm:text-7xl md:text-8xl text-wrap lg:text-9xl text-rose-600 ${bebas.className}`}
               >
                 Developer
               </span>
               <span
-                className={`text-[52px] text-wrap lg:text-9xl ${bebas.className}`}
+                className={`text-[52px] sm:text-7xl md:text-8xl text-wrap lg:text-9xl ${bebas.className}`}
               >
                 &
               </span>
               <span className="text-sm leading-4 text-zinc-400 lg:text-base mr-4 lg:mr-0 font-semibold">
                 Based in <br /> NJ, USA
               </span>
-            </motion.div>
-          </div>
+            </motion.span>
+          </span>
           <div className="overflow-hidden h-9xl">
             <motion.div
               initial={{ y: "100%" }}
@@ -132,13 +139,14 @@ const HeroSection: FC<HeroProps> = ({ scrollToRef }) => {
               <Button
                 radius="full"
                 variant="ghost"
+                onClick={() => scrollToSection("contactSection")}
                 className="font-semibold text-[12px] text-slate-200 hover:text-black gap-4 mr-5 lg:gap-5 lg:px-7 lg:ml-24"
               >
                 <Ripple />
                 <span>Contact</span>
               </Button>
               <span
-                className={`text-[52px] text-wrap lg:text-9xl text-yellow-400 ${bebas.className}`}
+                className={`text-[52px] sm:text-7xl md:text-8xl text-wrap lg:text-9xl text-yellow-400 ${bebas.className}`}
               >
                 Designer
               </span>

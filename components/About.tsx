@@ -12,7 +12,7 @@ const About = () => {
   return (
     <section
       id="aboutSection"
-      className="flex flex-col justify-center items-center min-h-screen gap-14 pb-12"
+      className="flex flex-col justify-center items-center gap-14 pb-12"
     >
       <header className="text-7xl lg:text-8xl font-bold text-center">
         <AnimatedTextCharacter text="About." className={`${bebas.className}`} />

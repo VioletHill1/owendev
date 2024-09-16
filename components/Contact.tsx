@@ -4,8 +4,11 @@ import { Button } from "@nextui-org/button";
 import Image from "next/image";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { motion } from "framer-motion";
 import github from "@/assets/github.png";
 import ig from "@/assets/insta.png";
+import { bebas } from "@/assets/fonts";
+import Link from "next/link";
 
 interface DataProps {
   name: string;
@@ -50,27 +53,42 @@ const ContactSection = () => {
 
   return (
     <section
-      id="aboutSection"
+      id="contactSection"
       className="flex flex-col justify-center items-center my-32 gap-14 pb-12 px-7 lg:px-32"
     >
+      <div className="overflow-hidden h-9xl">
+        <motion.h3
+          initial={{ y: "100%" }}
+          animate={{ y: "0%" }}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className={`text-7xl lg:text-8xl font-bold text-center ${bebas.className}`}
+        >
+          Contact.
+        </motion.h3>
+      </div>
       <div className="flex flex-col gap-10 lg:grid lg:grid-cols-2 w-full">
         <div className="flex flex-col gap-4">
           <h3 className="text-3xl font-bold mb-5">
             Contact me and let&apos;s work together.
           </h3>
           <div>
-            <h5 className="text-[#626fa8] font-bold">Email</h5>
-            <h6>owenzeledon@icloud.com</h6>
+            <h4 className="text-[#626fa8] font-bold">Email</h4>
+            <h5>owenzeledon@icloud.com</h5>
           </div>
           <div>
-            <h5 className="text-[#626fa8] font-bold">SMS message</h5>
-            <h6>+1 (973) 842-5639</h6>
+            <h4 className="text-[#626fa8] font-bold">SMS message</h4>
+            <h5>+1 (973) 842-5639</h5>
           </div>
           <div className="flex flex-col gap-2">
-            <h5 className="text-[#626fa8] font-bold">Social Media</h5>
+            <h4 className="text-[#626fa8] font-bold">Social Media</h4>
             <div className="invert flex gap-3">
-              <Image src={ig} width={25} height={25} alt="Instagram Logo" />
-              <Image src={github} width={25} height={25} alt="Github Logo" />
+              <Link href="https://www.instagram.com/owenr.dev">
+                <Image src={ig} width={25} height={25} alt="Instagram Logo" />
+              </Link>
+              <Link href="https://github.com/VioletHill1">
+                <Image src={github} width={25} height={25} alt="Github Logo" />
+              </Link>
             </div>
           </div>
         </div>
