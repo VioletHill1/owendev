@@ -10,7 +10,7 @@ const Footer = () => {
       </div>
       <div className="col-span-2 mb-8 flex order-1 justify-center gap-5 font-semibold">
         <Ripple />
-        <span>Available for work</span>
+        <h6>Available for hire</h6>
       </div>
       <div className="flex order-3 justify-end text-zinc-500 font-semibold text-sm">
         Made by Owen Rodriguez

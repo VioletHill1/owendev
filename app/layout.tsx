@@ -21,7 +21,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Owen R - Web Developer & Designer",
   description:
-    "I'm happy to present you my personal portfolio created by me. I'm a software developer and designer open to work on anything you need, from landing pages to a full ecommerce website with an admin panel.",
+    "Welcome to my Owen's portfolio. I'm a web developer and designer open to work on anything you need, from landing pages to a full ecommerce website.",
   keywords: [
     "Owen Web Developer",
     "Web Developer",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Owen R - Web Developer & Designer",
     description:
-      "I'm happy to present you my personal portfolio created by me. I'm a software developer and designer open to work on anything you need, from landing pages to a full ecommerce website with an admin panel.",
+      "Welcome to my Owen's portfolio. I'm a web developer and designer open to work on anything you need, from landing pages to a full ecommerce website.",
     url: "https://owendev-one.vercel.app",
     images: {
       url: "https://owendev-one.vercel.app/images/webbanner.png",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
       alt: "Banner for the website",
     },
     description:
-      "I'm happy to present you my personal portfolio created by me. I'm a software developer and designer open to work on anything you need, from landing pages to a full ecommerce website with an admin panel.",
+      "Welcome to my Owen's portfolio. I'm a web developer and designer open to work on anything you need, from landing pages to a full ecommerce website.",
   },
   robots: {
     index: true,
